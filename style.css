@@ -10,6 +10,7 @@ body {
 }
 .header {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   align-items: center;
   margin: 10px 100px;
@@ -81,8 +82,14 @@ body {
 /* Media Queries Start */
 @media (max-width: 1160px) {
   .header {
-    justify-content: space-around;
-    margin: 15px 10px;
+    width: 100%;
+    max-height: 60px;
+    overflow-y: hidden;
+    justify-content: space-between;
+    padding: 15px 25px;
+    margin: 0px;
+    box-shadow: 0px 0px 10px grey;
+    gap: 0px;
   }
   .menuBar {
     display: block;
@@ -91,9 +98,16 @@ body {
     width: 100px;
   }
   .header ul {
-    display: none;
+    display: block;
+    width: 100%;
+  }
+  .header ul li {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
   }
 
+  /* Here Main Section or Hero Section Start */
   /* Here Main Section or Hero Section Start */
 
   .heroSection {
